@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
-import hero from './components/Hero'
+import Hero from './components/Hero'
+import Trustedby from './components/Trustedby'
+import Services from './components/service'
+import Ourwork from './components/Ourwork'
+import Teams from './components/Teams'
+import Contactus from './components/Contactus'
+import Footer from './components/Footer'
 const App = () => {
   const [theme, setTheme] = useState('light')
 
@@ -13,10 +19,16 @@ const App = () => {
   }, [theme])
 
   return (
-    <div className='dark:bg-black min-h-screen relative'>
+    <div className='dark:bg-black h-40 relative'>
       <Navbar theme={theme} setTheme={setTheme} />
 
-      <hero />
+      <Hero />
+      <Trustedby />
+      <Services />
+      <Ourwork />
+      <Teams />
+      <Contactus/>
+      <Footer />
     </div>
   )
 }

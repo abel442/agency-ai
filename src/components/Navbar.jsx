@@ -25,10 +25,11 @@ const Navbar = ({ theme, setTheme }) => {
           alt="Close" 
         />
 
-        <a href="#home" className='sm:hover:text-primary transition-colors' onClick={() => setSidebarOpen(false)}>Home</a>
-        <a href="#about" className='sm:hover:text-primary transition-colors' onClick={() => setSidebarOpen(false)}>About</a>
+        <a href="#hero" className='sm:hover:text-primary transition-colors' onClick={() => setSidebarOpen(false)}>Home</a>
+
         <a href="#services" className='sm:hover:text-primary transition-colors' onClick={() => setSidebarOpen(false)}>Services</a>
-        <a href="#contact" className='sm:hover:text-primary transition-colors' onClick={() => setSidebarOpen(false)}>Contact</a>
+        <a href="#Ourwork"   className='sm:hover:text-primary transition-colors'  onClick={() => setSidebarOpen(false)}>Ourwork</a>
+        <a href="#contact-us" className='sm:hover:text-primary transition-colors'  onClick={() => setSidebarOpen(false)}>Contact</a>
       </div>
 
       {/* Theme Toggle & CTA Buttons */}
